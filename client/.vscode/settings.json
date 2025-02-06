@@ -1,0 +1,8 @@
+{
+  "intelephense.diagnostics.languageConstraints": true,
+  "editor.guides.indentation": true,
+  "files.associations": {
+  "*.js": "javascriptreact",
+  "*.jsx": "javascriptreact"
+}
+}

@@ -1,0 +1,100 @@
+main {
+  margin: 5% 0 2% 0;
+  width: 100%;
+  .main-wrap {
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 1rem;
+    .title-main-tool,
+    .title-main-vps,
+    .title-main-capthca {
+      color: rgb(34, 34, 34);
+      padding-top: 0.1rem;
+      text-align: center;
+      p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgb(169, 157, 235);
+      }
+    }
+    .main-list-item {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      padding: 0 1.5rem 1.5rem 1.5rem;
+      cursor: pointer;
+      .list-item {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        min-height: 360px;
+        img {
+          width: 100%;
+          border-radius: 8px 8px 0 0;
+          overflow: hidden;
+        }
+        .item-info {
+          text-align: center;
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+            margin: 12px;
+            text-shadow: 2px 2px 4px rgb(170, 106, 255);
+          }
+        }
+        .item-view {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          text-align: center;
+          background-color: #424446;
+          text-align: center;
+          width: 60%;
+          margin: 1rem auto;
+          padding: 0.8rem;
+          border-radius: 8px;
+          span {
+            z-index: 1;
+            color: white;
+            font-weight: 700;
+          }
+          overflow: hidden;
+        }
+        .item-view::before {
+          content: "";
+          position: absolute;
+          width: 2rem;
+          height: 800%;
+          background: #88e055;
+          transform: rotate(56deg);
+        }
+        .item-view:hover::before {
+          transform: rotate(360deg);
+          animation: animate2 2s linear infinite;
+        }
+        .item-view::after {
+          position: absolute;
+          content: "";
+          inset: 3px;
+          background-color: #424446;
+          border-radius: 8px;
+        }
+      }
+      .list-item:hover {
+        transition: 0.4s;
+      }
+    }
+  }
+}
+@keyframes animate2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

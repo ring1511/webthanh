@@ -1,0 +1,112 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4.5rem;
+  z-index: 999;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  nav {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    .main-header {
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 10rem;
+      }
+      .header-items {
+        display: flex;
+        width: 50%;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        a,
+        .btn-login {
+          color: #424242;
+          font-size: 0.9rem;
+          position: relative;
+          padding: 0.2rem;
+          font-weight: 700;
+        }
+        .item-header:hover {
+          transition: 0.4s;
+          color: tomato;
+        }
+        .show-info {
+          background-color: rgb(66, 68, 70);
+          padding: 0.4rem;
+          border-radius: 0.6rem;
+          color: whitesmoke;
+          font-weight: 500;
+        }
+        .show-info:hover {
+          scale: 1.02;
+        }
+        .item-header::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          height: 2px;
+          background-color: tomato;
+          visibility: hidden;
+          transition: visibility 0s, opacity 0.2s linear;
+        }
+        .item-header:hover::after {
+          visibility: visible;
+          opacity: 1;
+          animation: expandUnderline 0.4s forwards;
+        }
+        .btn-login {
+          padding: 0.4rem;
+          border-radius: 8px;
+          border: 1px solid #202020d7;
+        }
+        .btn-login:hover {
+          background-color: rgb(48, 48, 48);
+          color: rgb(255, 255, 255);
+          transition: 0.6s;
+        }
+      }
+      .item-account {
+        color: #424242;
+        font-weight: 700;
+        font-size: 0.9rem;
+        position: relative;
+        cursor: pointer;
+        .dropdown {
+          text-align: center;
+          font-size: 0.9rem;
+          position: absolute;
+          top: 120%;
+          left: -50%;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          min-width: 200%;
+          border-radius: 0.4rem;
+          background-color: #fff;
+          padding: 0.4rem 0.6rem;
+          .content-dropdown:hover {
+            color: tomato;
+            transform: translateX(10px);
+            transition: all 0.4s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes expandUnderline {
+  0% {
+    width: 0%;
+    left: 50%;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}

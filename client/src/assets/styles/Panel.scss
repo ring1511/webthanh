@@ -1,0 +1,124 @@
+.control-wrap {
+  width: 60%;
+  margin: 5% 0 2% 0;
+  width: 100%;
+  min-height: 696px;
+  .menu-control-wrap {
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 1rem;
+    padding-bottom: 32px;
+    .token-api {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      .title-control {
+        .title-api {
+          display: flex;
+          justify-content: center;
+          padding-top: 1.2rem;
+          font-size: 1.4rem;
+          color: rgb(65 76 65);
+          font-weight: 600;
+          position: relative;
+        }
+        .title-api::after {
+          content: "";
+          display: block;
+          width: 15%;
+          border-bottom: 2px solid #202020b2;
+          position: absolute;
+          bottom: -4px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .control-text {
+        width: 60%;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto 0 auto;
+        border-radius: 8px;
+        border: 1px solid #333333b7;
+        cursor: pointer;
+        span {
+          display: flex;
+          justify-content: center;
+          font-size: 0.9rem;
+          font-weight: 700;
+        }
+      }
+      input {
+        width: 52%;
+        font-family: "Chakra Petch";
+        border: 1px solid #c7c7c7b6;
+        border-radius: 4px;
+        padding: 8px;
+        height: 2rem;
+        font-size: 0.95rem;
+        font-weight: 600;
+        box-sizing: border-box;
+        cursor: text;
+        margin-top: 12px;
+      }
+      button {
+        margin-left: 12px;
+        font-size: 13px;
+        border-radius: 8px;
+        height: 2rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-family: "Chakra Petch";
+        background-color: rgba(224, 224, 224, 0.918);
+        border: 1px solid #6d6c6c67;
+        color: rgb(58, 58, 58);
+      }
+      button:hover {
+        color: rgb(255, 253, 253);
+        background-color: #3b3b3bbd;
+      }
+      .table-container {
+        padding: 2rem;
+        box-sizing: border-box;
+        table {
+          border-radius: 12px;
+          width: 100%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          thead {
+            color: #222020c9;
+          }
+          th {
+            padding: 0.6rem;
+            border: 0.1px solid #a3a3a3;
+            border-radius: 8px;
+          }
+
+          td {
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            padding: 0.4rem;
+            border: 0.1px solid #a3a3a3;
+            text-align: center;
+            border-radius: 8px;
+          }
+          td {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+          }
+          tbody tr:hover {
+            background-color: #f1f1f1;
+          }
+        }
+      }
+    }
+  }
+}
+.MuiBackdrop-root {
+  background-color: #d4d4d40e !important;
+}
